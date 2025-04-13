@@ -5,12 +5,13 @@
     "customizations": {
       "vscode": {
         "extensions": [
-          "esbenp.prettier-vscode",
-          "dbaeumer.vscode-eslint",
-          "bradlc.vscode-tailwindcss",      // si jamais tu veux styliser avec Tailwind
-          "ritwickdey.liveserver",
-          "runem.lit-plugin",               // support web components, même si c’est pour Lit, c’est utile !
-          "streetsidesoftware.code-spell-checker"
+            "esbenp.prettier-vscode",
+            "dbaeumer.vscode-eslint",
+            "bradlc.vscode-tailwindcss",
+            "ritwickdey.liveserver",
+            "runem.lit-plugin",
+            "streetsidesoftware.code-spell-checker",
+            "GitHub.copilot"
         ],
         "settings": {
           "editor.formatOnSave": true,
