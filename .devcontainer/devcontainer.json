@@ -1,0 +1,30 @@
+{
+    "name": "StencilJS DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+    "postCreateCommand": "npm install",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "bradlc.vscode-tailwindcss",      // si jamais tu veux styliser avec Tailwind
+          "ritwickdey.liveserver",
+          "runem.lit-plugin",               // support web components, même si c’est pour Lit, c’est utile !
+          "streetsidesoftware.code-spell-checker"
+        ],
+        "settings": {
+          "editor.formatOnSave": true,
+          "eslint.validate": ["javascript", "typescript"],
+          "files.autoSave": "onWindowChange"
+        }
+      }
+    },
+    "forwardPorts": [3333],
+    "portsAttributes": {
+      "3333": {
+        "label": "Stencil Dev Server",
+        "onAutoForward": "openPreview"
+      }
+    }
+  }
+  
